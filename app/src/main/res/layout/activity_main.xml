@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:text="Enter Bill Amount:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        />
+
+    <EditText
+        android:id="@+id/billAmountEditText"
+        android:inputType="numberDecimal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        />
+
+    <TextView
+        android:text="Select Tip Percentage:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        />
+
+    <SeekBar
+        android:id="@+id/tipSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="15"
+        />
+
+    <TextView
+        android:id="@+id/tipPercentageTextView"
+        android:text="15%"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        />
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:text="Calculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        />
+
+    <TextView
+        android:id="@+id/totalTextView"
+        android:text="Total: $0.00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        />
+
+</LinearLayout>
